@@ -1,20 +1,3 @@
-const searchEl = document.querySelector(".search")
-const searchinputEl = searchEl.querySelector("input")
-
-searchEl.addEventListener("click", function () {
-  searchinputEl.focus()
-})
-
-searchinputEl.addEventListener("focus", function () {
-  searchEl.classList.add("focused")
-  searchinputEl.setAttribute("placeholder", "통합검색")
-})
-
-searchinputEl.addEventListener("blur", function () {
-  searchEl.classList.remove("focused")
-  searchinputEl.setAttribute("placeholder", "")
-})
-
 const badgeEl = document.querySelector("header .badges")
 const scrollEl = document.querySelector("body .scroll")
 // console.log(scrollEl)
@@ -136,13 +119,6 @@ new Swiper(".awards .swiper-container", {
     nextEl: '.awards .swiper-next'
   }
 })
-
-const thisYear = document.querySelector('.this-year')
-// console.log(thisYear.textContent)
-thisYear.textContent = new Date().getFullYear()
-
-
-
 
 // 상품이미지 스크롤 내릴시 옆으로 나왔다가 사라지기 직접작성해보기
 // const seasonProductEl =document.querySelector(".season-product .product")
